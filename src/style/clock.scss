@@ -3,9 +3,43 @@
     grid-column: 2/11;
 
     background: $color-grey-one;
-    //height:80%;
+    text-align: center;
+    height:75%;
+    width:100%;
     align-self:end;
 
     -webkit-clip-path:polygon(7% 0, 100% 0, 93% 100%, 0% 100%);
     clip-path:polygon(7% 0, 100% 0, 93% 100%, 0% 100%);
+
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 275px));
+    grid-column-gap: 20px;
+
+    align-items: center;
+    text-align: left;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+
+    &__box {
+        margin-top:24px;
+        display:flex;
+        flex-direction:column;
+    }
+
+    &__title {
+        font-size:22px;
+        line-height: 25px;
+        color:$color-yellow-one;
+        font-family:"Roboto Condensed";
+
+    }
+
+    &__amount {
+        font-size: 90px;
+        font-weight:bold;
+        line-height: 115px;
+        color:white;
+        font-family:"Roboto Condensed";
+    }
 }
