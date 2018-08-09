@@ -21,6 +21,7 @@ export default class Picker extends Component {
         this.setState({
             startDate: date
         });
+        this.props.callback(date)
     }
 
     render() {
